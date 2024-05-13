@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import {
     Modal,
     Portal,
     Button,
     PaperProvider,
     TextInput,
+    Text,
 } from "react-native-paper";
 export default function Help() {
     const [visible, setVisible] = React.useState(false);
@@ -48,6 +49,7 @@ export default function Help() {
                 </Modal>
             </Portal>
             <View style={styles.container}>
+                <Text variant="titleMedium" style={styles.alinhar}>Precisa de Ajuda, Adiciona Sua Nota</Text>
                 <Button
                     style={{ marginTop: 30, backgroundColor: "#f0f0f0" }}
                     onPress={showModal}
@@ -93,4 +95,8 @@ const styles = StyleSheet.create({
         margin: 10,
         padding: 10,
     },
+    alinhar: {
+        textAlign: "center",
+        marginTop: 20,
+    }
 });

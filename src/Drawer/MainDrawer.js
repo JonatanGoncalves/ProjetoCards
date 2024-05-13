@@ -7,9 +7,10 @@ import Profile from "../components/Profile";
 import Help from "../components/Help";
 import Profit from "../components/Profit";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { View } from "react-native";
+
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
+
 const DashboardIcon = ({ focused, color, size }) => (
     <Ionicons name="md-speedometer" size={size} color={color} />
 );
@@ -31,7 +32,7 @@ const MainDrawer = () => {
                         <Drawer.Navigator
                             screenOptions={{
                                 drawerStyle: {
-                                    backgroundColor: "#6b3fa0", //mudar a cor
+                                    backgroundColor: "#FFF", //mudar a cor
                                     width: 230, //mudar a largura do sidebar
                                 },
                             }}

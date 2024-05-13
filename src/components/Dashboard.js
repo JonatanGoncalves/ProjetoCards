@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text} from "react-native";
 import { Avatar, Button, Card } from "react-native-paper";
 const LeftContent = (props) => <Avatar.Icon {...props} icon="folder" />;
 export default function Dashboard() {
@@ -7,78 +7,59 @@ export default function Dashboard() {
         <ScrollView style={styles.container}>
             <Card style={styles.cardBox}>
                 <Card.Title
-                    title="Card Title"
-                    subtitle="Card Subtitle"
+                    title="Imagens Aleatórias"
+                    subtitle="Mostrará imagens aleatórias"
                     left={LeftContent}
                 />
                 <Card.Content>
-                    <Text variant="titleLarge">Card title</Text>
-                    <Text variant="bodyMedium">Card content</Text>
+                    <Text variant="titleLarge">Imagens feita por</Text>
+                    <Text variant="bodyMedium">https://picsum.photos</Text>
                 </Card.Content>
                 <Card.Cover
-                    source={{ uri: "https://picsum.photos/700" }}
+                    source={{ uri: "https://picsum.photos/498" }}
                     style={styles.img}
                 />
                 <Card.Actions>
                     <Button>Cancel</Button>
-                    <Button>Ok</Button>
+                    <Button>OK</Button>
                 </Card.Actions>
             </Card>
             <Card style={styles.cardBox}>
                 <Card.Title
-                    title="Card Title"
-                    subtitle="Card Subtitle"
+                    title="Imagens Aleatórias"
+                    subtitle="Mostrará imagens aleatórias"
                     left={LeftContent}
                 />
                 <Card.Content>
-                    <Text variant="titleLarge">Card title</Text>
-                    <Text variant="bodyMedium">Card content</Text>
+                    <Text variant="titleLarge">Imagens feita por</Text>
+                    <Text variant="bodyMedium">https://picsum.photos</Text>
                 </Card.Content>
                 <Card.Cover
-                    source={{ uri: "https://picsum.photos/700" }}
+                    source={{ uri: "https://picsum.photos/715" }}
                     style={styles.img}
                 />
                 <Card.Actions>
                     <Button>Cancel</Button>
-                    <Button>Ok</Button>
+                    <Button>OK</Button>
                 </Card.Actions>
             </Card>
             <Card style={styles.cardBox}>
                 <Card.Title
-                    title="Card Title"
-                    subtitle="Card Subtitle"
+                    title="Imagens Aleatórias"
+                    subtitle="Mostrará imagens aleatórias"
                     left={LeftContent}
                 />
                 <Card.Content>
-                    <Text variant="titleLarge">Card title</Text>
-                    <Text variant="bodyMedium">Card content</Text>
+                    <Text variant="titleLarge">Imagens feita por</Text>
+                    <Text variant="bodyMedium">https://picsum.photos</Text>
                 </Card.Content>
                 <Card.Cover
-                    source={{ uri: "https://picsum.photos/700" }}
+                    source={{ uri: "https://picsum.photos/325" }}
                     style={styles.img}
                 />
                 <Card.Actions>
                     <Button>Cancel</Button>
-                    <Button>Ok</Button>
-                </Card.Actions>
-            </Card>
-            <Card style={styles.cardBox}>
-                <Card.Title
-                    title="Card Title"
-                    subtitle="Card Subtitle"
-                    left={LeftContent}
-                />
-                <Card.Content>
-                    <Text variant="titleLarge">Card title</Text>
-                    <Text variant="bodyMedium">Card content</Text>
-                </Card.Content>
-                <Card.Cover
-                    source={{ uri: "https://picsum.photos/700" }}
-                    style={styles.img}
-                />
-                <Card.Actions>
-                    <Button>Cancel</Button>
-                    <Button>Ok</Button>
+                    <Button>OK</Button>
                 </Card.Actions>
             </Card>
         </ScrollView>

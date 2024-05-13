@@ -24,10 +24,10 @@ export default function Profit() {
         <View style={styles.container}>
             <SafeAreaView>
                 <View>
-                    <Button onPress={showDatepicker} title="Show date picker!" />
+                    <Button onPress={showDatepicker} title="Mostre a Data Marcada!" />
                 </View>
                 <View style={{ marginTop: 30 }}>
-                    <Button onPress={showTimepicker} title="Show time picker!" />
+                    <Button onPress={showTimepicker} title="Mostre o Tempo Marcado!" />
                 </View>
                 <Text
                     style={{
@@ -38,7 +38,7 @@ export default function Profit() {
                         borderRadius: 10,
                     }}
                 >
-                    selected: {date.toLocaleString()}
+                    selecionado: {date.toLocaleString()}
                 </Text>
                 {show && (
                     <DateTimePicker
