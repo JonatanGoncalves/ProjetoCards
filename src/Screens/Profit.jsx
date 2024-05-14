@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, SafeAreaView, Button } from "react-native";
+import { Text, View, SafeAreaView, Button } from "react-native";
 import DateTimePicker from "@react-native-community/datetimepicker";
+import  styles  from "../styles/ProfitStyle";
 export default function Profit() {
     const [date, setDate] = useState(new Date(1598051730000));
     const [mode, setMode] = useState("date");
@@ -53,11 +54,3 @@ export default function Profit() {
         </View>
     );
 }
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-});

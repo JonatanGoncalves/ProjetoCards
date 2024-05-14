@@ -1,6 +1,8 @@
 import React from "react";
-import { ScrollView, StyleSheet, Text} from "react-native";
+import { ScrollView, Text} from "react-native";
 import { Avatar, Button, Card } from "react-native-paper";
+import styles from "../styles/DashboardStyle";
+
 const LeftContent = (props) => <Avatar.Icon {...props} icon="folder" />;
 export default function Dashboard() {
     return (
@@ -65,11 +67,3 @@ export default function Dashboard() {
         </ScrollView>
     );
 }
-const styles = StyleSheet.create({
-    cardBox: {
-        margin: 10,
-    },
-    img: {
-        padding: 10,
-    },
-});

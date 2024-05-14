@@ -2,10 +2,10 @@ import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import Dashboard from "../components/Dashboard";
-import Profile from "../components/Profile";
-import Help from "../components/Help";
-import Profit from "../components/Profit";
+import Dashboard from "../Screens/Dashboard";
+import Profile from "../Screens/Profile";
+import Help from "../Screens/Help";
+import Profit from "../Screens/Profit";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 const Drawer = createDrawerNavigator();

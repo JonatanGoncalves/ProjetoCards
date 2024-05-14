@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
+import styles from "../styles/HelpStyle";
 import {
     Modal,
     Portal,
@@ -92,27 +93,3 @@ export default function Help() {
         </PaperProvider>
     );
 }
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-    },
-    textInpput: {
-        height: 40,
-        borderColor: "grey",
-        borderWidth: 1,
-        paddingHorizontal: 10,
-        marginVertical: 10,
-    },
-    noteContainer: {
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-        margin: 10,
-        padding: 10,
-    },
-    alinhar: {
-        textAlign: "center",
-        marginTop: 20,
-    }
-});

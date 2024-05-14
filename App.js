@@ -1,4 +1,4 @@
-import MainDrawer from "./src/Drawer/MainDrawer";
+import MainDrawer from "./src/Navigation/MainDrawer";
 export default function App() {
   return (
     <>
