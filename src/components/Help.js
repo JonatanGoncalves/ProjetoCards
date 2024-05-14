@@ -9,12 +9,25 @@ import {
     Text,
 } from "react-native-paper";
 export default function Help() {
-    const [visible, setVisible] = React.useState(false);
-    const [note, setNote] = useState("");
-    const [notes, setNotes] = useState([]);
-    const showModal = () => setVisible(true);
-    const hideModal = () => setVisible(false);
+    const [visible, setVisible] = useState(false); // booleano é true or false
+    const [note, setNote] = useState(""); // é uma string
+    const [notes, setNotes] = useState([]); // é um array
+    // const showModal = () => setVisible(true);
+    // const hideModal = () => setVisible(false);
+
+    function showModal() {
+        console.log("Caramba é pra mostrar o Modal")
+        setVisible(true);
+    }
+    function hideModal() {
+        console.log("Caramba é pra esconder, esconde logo!")
+        setVisible(false);
+    }
+
+
     const containerStyle = { backgroundColor: "white", padding: 20, margin: 10 };
+
+
     const handleSubmit = () => {
         if (note.trim() !== "") {
             const noteId = Date.now();
@@ -23,6 +36,9 @@ export default function Help() {
             hideModal();
         }
     };
+
+    
+    
     const handleDelete = (noteId) => {
         setNotes(notes.filter((note) => note.id !== noteId));
     };
